@@ -1,5 +1,5 @@
 plugins {
-  java
+  application
 }
 
 repositories {
@@ -10,6 +10,10 @@ java {
   toolchain {
     languageVersion = JavaLanguageVersion.of(21)
   }
+}
+
+application {
+  mainClass = "com.thinhduynguyen.marketdata.Main"
 }
 
 dependencies {
